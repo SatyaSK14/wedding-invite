@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="t d">
+<title id="t">Royal Heritage palace arch with a wedding mandap</title><desc id="d">Antique-gold palace arch, hanging flowers, lotus motifs, temple silhouettes and a bride and groom at a ceremonial mandap.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff8e9"/><stop offset=".52" stop-color="#f3dfba"/><stop offset="1" stop-color="#fbf0dc"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f5dca1"/><stop offset=".45" stop-color="#b17b31"/><stop offset=".7" stop-color="#e6c17d"/><stop offset="1" stop-color="#8b5a25"/></linearGradient>
+ <linearGradient id="burgundy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8b3446"/><stop offset="1" stop-color="#4e1728"/></linearGradient>
+ <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e8d3b0"/><stop offset="1" stop-color="#aab5a0"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#fff4d4" stop-opacity=".95"/><stop offset="1" stop-color="#fff0c9" stop-opacity="0"/></radialGradient>
+ <pattern id="grain" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M5 10l2 1m16 28l1-2m18-26l2 1M14 4l-1 2" stroke="#9b7649" stroke-opacity=".12" stroke-width="1"/></pattern>
+ <g id="flower" stroke="#a87b3e" stroke-width="1.4"><ellipse cx="0" cy="-8" rx="4.5" ry="8" fill="#d59b9a"/><ellipse cx="0" cy="-8" rx="4.5" ry="8" fill="#e7b5a9" transform="rotate(60)"/><ellipse cx="0" cy="-8" rx="4.5" ry="8" fill="#cf8d8d" transform="rotate(120)"/><ellipse cx="0" cy="-8" rx="4.5" ry="8" fill="#e7b5a9" transform="rotate(180)"/><ellipse cx="0" cy="-8" rx="4.5" ry="8" fill="#cf8d8d" transform="rotate(240)"/><ellipse cx="0" cy="-8" rx="4.5" ry="8" fill="#e7b5a9" transform="rotate(300)"/><circle r="3.5" fill="#b88536"/></g>
+ <g id="leaf" fill="#53684d" stroke="#ba8b48" stroke-width=".8"><path d="M0 0C-23-5-24-25-3-29C6-18 9-7 0 0Z"/><path d="M0 0C17-8 20-24 5-28C-4-18-5-7 0 0Z"/><path d="M0 0v-24" fill="none"/></g>
+</defs>
+<rect width="1200" height="760" fill="url(#paper)"/><rect width="1200" height="760" fill="url(#grain)"/>
+<ellipse cx="600" cy="405" rx="420" ry="280" fill="url(#glow)"/>
+<!-- Outer temple pillars -->
+<g stroke="url(#gold)" stroke-width="5" fill="none" stroke-linejoin="round">
+ <path d="M62 760V210Q62 118 154 76Q245 35 337 76L385 122"/>
+ <path d="M1138 760V210Q1138 118 1046 76Q955 35 863 76L815 122"/>
+ <path d="M84 760V219Q84 137 166 98Q248 60 329 98L363 133"/>
+ <path d="M1116 760V219Q1116 137 1034 98Q952 60 871 98L837 133"/>
+ <path d="M45 620h82m-82 20h82m-82 20h82m946-40h82m-82 20h82m-82 20h82"/>
+ <path d="M25 720h140m870 0h140"/>
+</g>
+<!-- central arch -->
+<path d="M202 760V245C202 83 345 22 600 22S998 83 998 245V760Z" fill="#fff8eb" fill-opacity=".72" stroke="url(#gold)" stroke-width="7"/>
+<path d="M227 760V250C227 112 361 50 600 50S973 112 973 250V760" fill="none" stroke="#bd8d46" stroke-width="2"/>
+<path d="M250 760V255C250 135 379 76 600 76S950 135 950 255V760" fill="none" stroke="#d9b26a" stroke-width="1.3" stroke-dasharray="2 7"/>
+<!-- architectural filigree -->
+<g fill="none" stroke="#b2833e" stroke-width="2" opacity=".85">
+ <path d="M600 20l-13 20 13 12 13-12zM600 52v27m-15-13h30"/>
+ <path d="M203 245q32-33 66 0t66 0t66 0M997 245q-32-33-66 0t-66 0t-66 0"/>
+ <path d="M208 282q28-28 56 0t56 0M992 282q-28-28-56 0t-56 0"/>
+ <path d="M207 320c28-20 44-20 70 0s43 20 70 0M993 320c-28-20-44-20-70 0s-43 20-70 0"/>
+</g>
+<!-- lush garlands -->
+<g>
+ <path d="M220 45q35 86 4 158t6 128t-1 135M980 45q-35 86-4 158t-6 128t1 135" fill="none" stroke="#587050" stroke-width="6"/>
+ <g transform="translate(225 62) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(239 97) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(225 132) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(239 167) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(225 202) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(239 237) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(225 272) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(239 307) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(225 342) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(239 377) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(225 412) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(239 447) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(225 482) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g>
+ <g transform="translate(975 62) scale(-1 1) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(961 97) scale(-1 1) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(975 132) scale(-1 1) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(961 167) scale(-1 1) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(975 202) scale(-1 1) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(961 237) scale(-1 1) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(975 272) scale(-1 1) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(961 307) scale(-1 1) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(975 342) scale(-1 1) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(961 377) scale(-1 1) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(975 412) scale(-1 1) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(961 447) scale(-1 1) rotate(25)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g><g transform="translate(975 482) scale(-1 1) rotate(-30)"><use href="#leaf"/><use href="#flower" transform="translate(6 12) scale(.85)"/></g>
+</g>
+<!-- hanging strings -->
+<g stroke="#b88a43" stroke-width="1.5">
+ <path d="M300 30v45" /><circle cx="300" cy="75" r="5" fill="#b68a43"/><circle cx="300" cy="85" r="3.5" fill="#c88486"/><path d="M350 30v64" /><circle cx="350" cy="94" r="5" fill="#b68a43"/><circle cx="350" cy="104" r="3.5" fill="#c88486"/><path d="M400 30v83" /><circle cx="400" cy="113" r="5" fill="#b68a43"/><circle cx="400" cy="123" r="3.5" fill="#c88486"/><path d="M450 30v102" /><circle cx="450" cy="132" r="5" fill="#b68a43"/><circle cx="450" cy="142" r="3.5" fill="#c88486"/><path d="M500 30v45" /><circle cx="500" cy="75" r="5" fill="#b68a43"/><circle cx="500" cy="85" r="3.5" fill="#c88486"/><path d="M550 30v64" /><circle cx="550" cy="94" r="5" fill="#b68a43"/><circle cx="550" cy="104" r="3.5" fill="#c88486"/><path d="M600 30v83" /><circle cx="600" cy="113" r="5" fill="#b68a43"/><circle cx="600" cy="123" r="3.5" fill="#c88486"/><path d="M650 30v102" /><circle cx="650" cy="132" r="5" fill="#b68a43"/><circle cx="650" cy="142" r="3.5" fill="#c88486"/><path d="M700 30v45" /><circle cx="700" cy="75" r="5" fill="#b68a43"/><circle cx="700" cy="85" r="3.5" fill="#c88486"/><path d="M750 30v64" /><circle cx="750" cy="94" r="5" fill="#b68a43"/><circle cx="750" cy="104" r="3.5" fill="#c88486"/><path d="M800 30v83" /><circle cx="800" cy="113" r="5" fill="#b68a43"/><circle cx="800" cy="123" r="3.5" fill="#c88486"/><path d="M850 30v102" /><circle cx="850" cy="132" r="5" fill="#b68a43"/><circle cx="850" cy="142" r="3.5" fill="#c88486"/><path d="M900 30v45" /><circle cx="900" cy="75" r="5" fill="#b68a43"/><circle cx="900" cy="85" r="3.5" fill="#c88486"/>
+</g>
+<!-- distant temple landscape -->
+<g fill="#b39c7c" opacity=".62" stroke="#a17a48" stroke-width="1.5">
+ <path d="M275 590V475h14v-28h8v-24h10v24h8v28h14v115zM265 475l50-30 50 30zM280 447l35-27 35 27zM310 401h9v-22h-9zM305 379h19l-9-18z"/>
+ <path d="M856 590V455h14v-26h9v-22h12v22h9v26h13v135zM844 455l55-33 54 33zM859 425l40-27 40 27zM894 398h10v-23h-10zM888 375h22l-11-20z"/>
+ <path d="M275 600q45-28 80 0t80 0M760 600q45-28 80 0t80 0" fill="none" stroke-width="3"/>
+</g>
+<!-- lotus-water base -->
+<path d="M250 600q90-35 180 0t180 0t180 0t180 0V760H250Z" fill="url(#water)" opacity=".72"/>
+<g stroke="#9d8b6d" stroke-width="1" fill="none" opacity=".65">
+ <path d="M260 645q70-18 140 0t140 0t140 0t140 0t140 0M260 682q70-18 140 0t140 0t140 0t140 0t140 0M260 718q70-18 140 0t140 0t140 0t140 0t140 0"/>
+</g>
+<!-- floral base clusters -->
+<g transform="translate(315 633) scale(1.3)"><use href="#leaf"/><use href="#leaf" transform="rotate(75) translate(0 -8)"/><use href="#flower" transform="translate(16 -22) scale(1.4)"/><use href="#flower" transform="translate(-22 -10) scale(.9)"/></g>
+<g transform="translate(885 633) scale(-1.3 1.3)"><use href="#leaf"/><use href="#leaf" transform="rotate(75) translate(0 -8)"/><use href="#flower" transform="translate(16 -22) scale(1.4)"/><use href="#flower" transform="translate(-22 -10) scale(.9)"/></g>
+<!-- ceremonial mandap -->
+<g transform="translate(600 540)">
+ <ellipse cx="0" cy="145" rx="205" ry="22" fill="#8c7155" opacity=".2"/>
+ <path d="M-178 108V-35Q0-162 178-35V108" fill="#fff5e2" fill-opacity=".8" stroke="url(#gold)" stroke-width="7"/>
+ <path d="M-158 108V-28Q0-142 158-28V108" fill="none" stroke="#bb8b43" stroke-width="2"/>
+ <path d="M-171-31q28 45 58 5t58 0t58 0t58 0t58-5" fill="none" stroke="#7f3a3c" stroke-width="9"/>
+ <path d="M-180-35q35-50 70-4t70 0t70 0t70 0t70 4" fill="none" stroke="#d6a55a" stroke-width="10" stroke-linecap="round"/>
+ <g stroke="#b68a43" stroke-width="2"><path d="M-155-30v35m-14-12h28M155-30v35m-14-12h28"/></g>
+ <g transform="translate(-170 -35)"><use href="#flower" transform="scale(.8)"/><path d="M0 5v20" stroke="#a77d3d" stroke-width="1.5"/></g><g transform="translate(-125 -42)"><use href="#flower" transform="scale(.8)"/><path d="M0 5v28" stroke="#a77d3d" stroke-width="1.5"/></g><g transform="translate(-80 -35)"><use href="#flower" transform="scale(.8)"/><path d="M0 5v36" stroke="#a77d3d" stroke-width="1.5"/></g><g transform="translate(-35 -42)"><use href="#flower" transform="scale(.8)"/><path d="M0 5v20" stroke="#a77d3d" stroke-width="1.5"/></g><g transform="translate(35 -35)"><use href="#flower" transform="scale(.8)"/><path d="M0 5v28" stroke="#a77d3d" stroke-width="1.5"/></g><g transform="translate(80 -42)"><use href="#flower" transform="scale(.8)"/><path d="M0 5v36" stroke="#a77d3d" stroke-width="1.5"/></g><g transform="translate(125 -35)"><use href="#flower" transform="scale(.8)"/><path d="M0 5v20" stroke="#a77d3d" stroke-width="1.5"/></g><g transform="translate(170 -42)"><use href="#flower" transform="scale(.8)"/><path d="M0 5v28" stroke="#a77d3d" stroke-width="1.5"/></g>
+ <!-- couple illustration, stylized painterly shapes -->
+ <g transform="translate(-32 22)">
+  <path d="M-42 85Q-70 40-45 4Q-28-20 0-2Q25 15 28 85Z" fill="#f4e3c7" stroke="#9b6c3c" stroke-width="2"/>
+  <path d="M-44 15Q-23 40-39 85h28Q0 50-2 1Z" fill="url(#burgundy)"/>
+  <path d="M-46 23l17 6m-14 12l16 7m-14 12l12 5" stroke="#e4c079" stroke-width="2"/>
+  <ellipse cx="-12" cy="-18" rx="19" ry="23" fill="#d99b78"/>
+  <path d="M-31-19q-7-27 18-29q25-3 24 25l-9-13q-15 7-31 17z" fill="#38261f"/>
+  <path d="M-1 5q-11 8-23 0" fill="none" stroke="#6d342d" stroke-width="2"/>
+  <path d="M-30-14q-7 1-4 7m27-7q6 1 3 7" stroke="#37251f" stroke-width="2" fill="none"/>
+ </g>
+ <g transform="translate(31 25)">
+  <path d="M-27 88Q-42 34-26 6Q-8-14 16 7Q38 34 38 88Z" fill="url(#burgundy)" stroke="#9a6b39" stroke-width="2"/>
+  <path d="M-26 12Q-9 25 4 20l31 68H4Z" fill="#6f2034"/>
+  <path d="M-18 29l40 48m-44-31l35 42m-27-65l46 56" stroke="#e3bc74" stroke-width="2" opacity=".9"/>
+  <ellipse cx="0" cy="-18" rx="18" ry="22" fill="#e6b08c"/>
+  <path d="M-20-20q-3-31 21-30q23 1 20 31l-8-12q-18 8-33 11z" fill="#38251e"/>
+  <path d="M-17-5q15 16 31-1" fill="none" stroke="#8b4650" stroke-width="1.8"/>
+  <circle cx="17" cy="-7" r="4" fill="#cf8580"/><circle cx="20" cy="-2" r="3" fill="#d2a04a"/>
+ </g>
+ <path d="M-18 92q20-9 35 0" stroke="#d4aa63" stroke-width="4" fill="none" stroke-linecap="round"/>
+</g>
+<!-- corners and border -->
+<g fill="none" stroke="url(#gold)" stroke-width="2">
+ <path d="M16 16h85q-30 8-34 36q-20-20-51-10zM1184 16h-85q30 8 34 36q20-20 51-10z"/>
+ <path d="M16 744h85q-30-8-34-36q-20 20-51 10zM1184 744h-85q30-8 34-36q20 20 51 10z"/>
+ <rect x="12" y="12" width="1176" height="736" rx="4" stroke-opacity=".7"/>
+</g>
+</svg>
