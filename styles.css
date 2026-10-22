@@ -3,105 +3,106 @@
  --serif:"Cormorant Garamond",Georgia,serif;--sans:"DM Sans",Arial,sans-serif;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:75px}
-body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--serif);font-size:18px}
-body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.23;background-image:radial-gradient(rgba(159,119,62,.33) .45px,transparent .65px);background-size:8px 8px}
-.paper-grain{position:fixed;inset:0;z-index:15;pointer-events:none;opacity:.075;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E")}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.45}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.16;background-image:radial-gradient(rgba(159,119,62,.35) .45px,transparent .65px);background-size:8px 8px}
 a{color:inherit}
-.site-header{height:58px;position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:5px clamp(18px,5vw,72px);background:rgba(255,248,236,.95);border-bottom:1px solid rgba(181,134,66,.42)}
+.site-header{height:64px;position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:6px clamp(18px,5vw,72px);background:rgba(255,248,236,.97);border-bottom:1px solid rgba(181,134,66,.43);backdrop-filter:blur(10px)}
 .brand{display:flex;text-decoration:none;align-items:center}
-.brand-ring{width:43px;height:43px;position:relative;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--burgundy);font-size:24px;font-style:italic;letter-spacing:-5px;padding-right:4px}
-.brand-ring:before,.brand-ring:after{content:"✿";position:absolute;color:var(--gold);font-size:11px;letter-spacing:0}
-.brand-ring:before{top:-5px;left:15px;background:var(--paper);padding:0 2px}
+.brand-ring{width:45px;height:45px;position:relative;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;gap:0;color:var(--burgundy);font-size:24px;letter-spacing:-5px;padding-right:5px;font-style:italic}
+.brand-ring:before,.brand-ring:after{content:"✿";position:absolute;color:var(--gold);font-size:10px;letter-spacing:0}
+.brand-ring:before{top:-5px;left:16px;background:var(--paper);padding:0 2px}
 .brand-ring:after{bottom:-5px;right:14px;background:var(--paper);padding:0 2px}
-.brand-c{color:var(--gold)}
-.brand-leaf{position:absolute;right:-6px;bottom:4px;font-size:12px;letter-spacing:0;color:var(--gold)}
+.brand-ring i{font-size:17px;font-style:italic;color:var(--gold);margin-left:1px}
 .nav{display:flex;align-items:center;gap:clamp(18px,3.1vw,44px)}
-.nav a{font:500 10px var(--sans);text-transform:uppercase;letter-spacing:.22em;color:var(--burgundy);text-decoration:none;padding:10px 0;border-bottom:1px solid transparent}
+.nav a{font:500 10px var(--sans);text-transform:uppercase;letter-spacing:.21em;color:var(--burgundy);text-decoration:none;padding:10px 0;border-bottom:1px solid transparent;white-space:nowrap}
 .nav a:hover,.nav a:focus-visible{border-color:var(--gold)}
 .menu-toggle{display:none;background:transparent;border:1px solid var(--gold);border-radius:4px;color:var(--burgundy);font-size:21px;padding:5px 9px}
-.hero{max-width:1280px;margin:0 auto;position:relative}
-.hero-frame{width:100%;position:relative;overflow:hidden;background:var(--paper)}
-.hero-art{display:block;width:100%;height:auto;object-fit:cover;object-position:center top;mask-image:linear-gradient(to bottom,#000 0%,#000 83%,rgba(0,0,0,.72) 90%,transparent 99%)}
-.hero-caption{text-align:center;position:relative;margin:-42px auto 0;padding:25px 28px 28px;max-width:780px;background:linear-gradient(180deg,rgba(255,248,236,.97),rgba(247,239,226,.96));border:1px solid rgba(181,134,66,.62);outline:1px solid rgba(181,134,66,.2);outline-offset:5px;z-index:2}
-.eyebrow{margin:0 0 9px;color:var(--gold);font:500 10px var(--sans);letter-spacing:.29em;text-transform:uppercase}
-.hero-caption h1{font-size:clamp(43px,6.4vw,71px);font-weight:500;line-height:.9;color:var(--burgundy);margin:0}
+.hero{max-width:1480px;margin:0 auto;padding:0 0 20px}
+.hero-photo{height:clamp(390px,49vw,650px);position:relative;overflow:hidden;background:#b69b78}
+.hero-photo>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 58%}
+.hero-wash{position:absolute;inset:0;background:linear-gradient(90deg,rgba(50,21,20,.36),transparent 24%,rgba(255,246,228,.2) 50%,transparent 76%,rgba(50,21,20,.34)),linear-gradient(0deg,rgba(61,31,22,.38),transparent 38%,rgba(61,31,22,.16))}
+.photo-ornament{position:absolute;left:0;right:0;text-align:center;color:#f8e6b8;text-shadow:0 1px 4px rgba(52,21,20,.75);font-size:clamp(22px,3vw,36px);letter-spacing:.2em;pointer-events:none}
+.photo-ornament.top{top:17px}.photo-ornament.bottom{bottom:17px}
+.hero-caption{position:relative;width:min(760px,calc(100% - 40px));margin:-248px auto 0;padding:27px clamp(18px,4vw,42px) 28px;text-align:center;z-index:2;background:rgba(255,248,236,.95);border:1px solid var(--gold);outline:1px solid rgba(181,134,66,.3);outline-offset:5px;box-shadow:0 12px 42px rgba(50,22,18,.17)}
+.eyebrow{margin:0 0 10px;color:var(--gold);font:500 10px var(--sans);letter-spacing:.28em;text-transform:uppercase}
+.invocation{font:600 23px "Noto Serif Devanagari",serif;color:var(--burgundy);margin:0}
+.roman-invocation{font-size:13px;font-style:italic;margin:3px 0 8px;color:#7a5947}
+.hero-caption h1{font-size:clamp(43px,6.4vw,72px);font-weight:500;line-height:.9;color:var(--burgundy);margin:8px 0 0}
 .hero-caption h1 span,.signature span{color:var(--gold);font-style:italic}
-.gold-rule{display:flex;align-items:center;gap:12px;width:min(245px,70%);margin:15px auto;color:var(--gold)}
+.gold-rule{display:flex;align-items:center;gap:12px;width:min(245px,70%);margin:14px auto;color:var(--gold)}
 .gold-rule:before,.gold-rule:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold))}
 .gold-rule:after{transform:scaleX(-1)}
 .gold-rule span{font-size:18px;line-height:1}
-.invocation{font:600 23px "Noto Serif Devanagari",serif;color:var(--burgundy);margin:0}
-.roman-invocation{font-size:13px;font-style:italic;margin:3px 0 11px}
 .invitation-copy{max-width:560px;margin:0 auto;line-height:1.43;font-size:19px}
-.hero-date{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:20px;color:var(--burgundy);font-size:14px}
+.hero-date{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:17px;color:var(--burgundy);font-size:13px}
 .hero-date i{width:4px;height:4px;background:var(--gold);transform:rotate(45deg)}
 .hero-date strong{font-weight:600;letter-spacing:.04em}
 .section-shell{width:min(1060px,calc(100% - 40px));margin-inline:auto}
-.family-section{position:relative;text-align:center;padding:92px 0 83px}
+.family-section{position:relative;text-align:center;padding:98px 0 86px}
 .section-ornament{color:var(--gold);font-size:22px;letter-spacing:.2em;margin:0 0 13px}
 .section-ornament span{font-size:27px;vertical-align:middle}
 .family-section h2{font-size:clamp(35px,4.5vw,50px);font-weight:500;color:var(--burgundy);margin:0 auto 34px;max-width:670px;line-height:1}
-.family-grid{display:grid;grid-template-columns:1fr 72px 1fr;align-items:center;max-width:850px;margin:0 auto}
-.family-card{position:relative;padding:23px 24px 27px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);background:rgba(255,249,239,.28)}
+.family-grid{display:grid;grid-template-columns:minmax(0,1fr) 60px minmax(0,1fr);align-items:stretch;max-width:850px;margin:0 auto}
+.family-card{position:relative;padding:28px 20px 27px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);background:rgba(255,249,239,.35);display:flex;flex-direction:column;align-items:center;justify-content:center}
 .family-card:before,.family-card:after{content:"❧";position:absolute;color:rgba(181,134,66,.7);font-size:22px;top:7px}
 .family-card:before{left:9px}.family-card:after{right:9px;transform:scaleX(-1)}
-.family-label{margin:0 0 7px!important;color:var(--gold)!important;font:500 9px var(--sans)!important;letter-spacing:.24em;text-transform:uppercase}
+.family-label{margin:0 0 7px;color:var(--gold);font:500 9px var(--sans);letter-spacing:.24em;text-transform:uppercase}
 .family-card h3{color:var(--burgundy);font-size:clamp(29px,3vw,37px);font-weight:500;line-height:1;margin:0 0 10px}
 .family-card p{font-size:17px;line-height:1.45;margin:3px 0}
 .family-relation{font-style:italic}
 .family-names{color:#60473a}
-.family-divider{display:flex;flex-direction:column;align-items:center;gap:5px;color:var(--gold);font-style:italic;font-size:31px}
+.family-divider{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;color:var(--gold);font-style:italic;font-size:31px}
 .family-divider i{font-size:20px;font-style:normal}
 .section-ornament.bottom{margin:26px 0 0;font-size:18px}
-.events-section{padding:77px 0 88px;border-top:1px solid var(--line,rgba(181,134,66,.3));border-bottom:1px solid rgba(181,134,66,.48);background:linear-gradient(180deg,rgba(228,205,166,.2),rgba(255,248,236,.6) 55%,rgba(228,205,166,.14))}
+.events-section{padding:77px 0 88px;border-top:1px solid rgba(181,134,66,.3);border-bottom:1px solid rgba(181,134,66,.48);background:linear-gradient(180deg,rgba(228,205,166,.2),rgba(255,248,236,.7) 55%,rgba(228,205,166,.14))}
 .section-heading{text-align:center;margin-bottom:37px}
 .section-heading h2{margin:0;color:var(--burgundy);font-size:clamp(39px,5vw,55px);line-height:.95;font-weight:500}
 .section-heading .gold-rule{margin-top:16px}
-.event-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-.event-card{display:grid;grid-template-columns:44% 56%;min-width:0;min-height:286px;position:relative;border:1px solid var(--gold);background:rgba(255,251,244,.78);box-shadow:0 7px 24px rgba(92,56,33,.06)}
+.event-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;align-items:stretch}
+.event-card{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);min-width:0;min-height:310px;position:relative;border:1px solid var(--gold);background:rgba(255,251,244,.85);box-shadow:0 7px 24px rgba(92,56,33,.06);overflow:hidden}
 .event-card:before{content:"";position:absolute;inset:5px;border:1px solid rgba(181,134,66,.32);pointer-events:none;z-index:2}
-.event-art{min-width:0;min-height:100%;overflow:hidden;background:#e5c994}
-.event-art img{display:block;width:100%;height:100%;min-height:286px;object-fit:cover;object-position:center}
-.event-content{position:relative;z-index:3;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px 19px}
-.event-kicker{font:500 9px var(--sans);letter-spacing:.11em;text-transform:uppercase;color:var(--gold);line-height:1.6;margin:0 0 8px}
-.event-content h3{font-size:clamp(28px,3vw,38px);line-height:.98;font-weight:500;color:var(--burgundy);margin:0}
-.event-time{font-size:20px;color:var(--burgundy);margin:9px 0 3px}
+.event-art{min-width:0;min-height:310px;overflow:hidden;background:#e5c994}
+.event-art img{display:block;width:100%;height:100%;min-height:310px;object-fit:cover;object-position:center}
+.event-content{position:relative;z-index:3;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-width:0;padding:28px 16px}
+.event-kicker{font:500 9px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold);line-height:1.6;margin:0 0 8px;max-width:100%}
+.event-content h3{font-size:clamp(28px,3vw,37px);line-height:.98;font-weight:500;color:var(--burgundy);margin:0;overflow-wrap:anywhere}
+.event-time{font-size:20px;color:var(--burgundy);margin:10px 0 3px}
 .event-divider{font-size:16px;color:var(--gold);margin:4px 0 8px}
 .event-venue{font-size:16px;line-height:1.45;margin:0 0 13px}
-.map-link{font:500 10px var(--sans);letter-spacing:.035em;text-decoration:none;color:var(--burgundy);border-bottom:1px solid var(--gold);padding-bottom:5px}
-.map-link span{margin-left:5px;color:var(--gold)}
-.wedding-section{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:clamp(28px,6vw,72px);padding-block:96px}
+.map-link{font:500 10px var(--sans);letter-spacing:.025em;text-decoration:none;color:var(--burgundy);border-bottom:1px solid var(--gold);padding-bottom:5px;max-width:100%}
+.map-link span{margin-left:4px;color:var(--gold)}
+.wedding-section{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);align-items:center;gap:clamp(28px,6vw,72px);padding-block:96px}
 .wedding-art{position:relative;min-width:0;overflow:hidden;border:1px solid var(--gold);padding:7px;background:var(--paper)}
 .wedding-art:before{content:"";position:absolute;inset:7px;border:1px solid rgba(181,134,66,.65);pointer-events:none;z-index:2}
-.wedding-art img{display:block;width:100%;height:100%;min-height:235px;max-height:365px;object-fit:cover;object-position:center}
-.wedding-art-caption{position:absolute;left:0;right:0;bottom:12px;z-index:3;display:flex;align-items:center;justify-content:center;gap:17px;color:var(--burgundy);font-size:18px;letter-spacing:.18em;text-shadow:0 1px 3px var(--paper)}
-.wedding-art-caption span:first-child,.wedding-art-caption span:last-child{color:var(--gold)}
-.wedding-details{text-align:center;padding:20px 0}
+.wedding-art img{display:block;width:100%;aspect-ratio:1.44/1;object-fit:cover;object-position:center 55%}
+.wedding-art-caption{position:absolute;left:15px;right:15px;bottom:17px;z-index:3;display:flex;align-items:center;justify-content:center;gap:17px;color:#fff8ec;font-size:18px;letter-spacing:.18em;text-shadow:0 1px 5px rgba(46,20,20,.9)}
+.wedding-art-caption span:first-child,.wedding-art-caption span:last-child{color:#f0cf88}
+.wedding-details{text-align:center;padding:20px 0;min-width:0}
 .wedding-details h2{font-size:clamp(40px,5.3vw,60px);color:var(--burgundy);line-height:.9;font-weight:500;margin:0}
-.wedding-date{font-size:20px;color:var(--burgundy);margin:7px 0 19px}
-.wedding-details h3{font-size:30px;color:var(--burgundy);font-weight:600;line-height:1;margin:0 0 7px}
+.wedding-date{font-size:20px;color:var(--burgundy);margin:8px 0 19px}
+.wedding-details h3{font-size:30px;color:var(--burgundy);font-weight:600;line-height:1.1;margin:0 0 7px}
 .wedding-venue{font-size:17px;margin:0}
-.button-link{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:13px 17px;border:1px solid var(--gold);color:var(--burgundy);font:500 10px var(--sans);letter-spacing:.13em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s}
+.button-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:22px;padding:13px 17px;border:1px solid var(--gold);color:var(--burgundy);font:500 10px var(--sans);letter-spacing:.13em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s}
 .button-link:hover{background:var(--burgundy);color:var(--paper)}
-.blessings-section{position:relative;overflow:hidden;text-align:center;padding:57px 0 73px;background:linear-gradient(180deg,rgba(255,248,236,.55),rgba(239,222,194,.72));border-top:1px solid var(--gold)}
-.blessings-section:before{content:"";position:absolute;left:0;right:0;bottom:0;height:100px;background-image:url("assets/florals.webp");background-repeat:no-repeat;background-size:cover;background-position:center 74%;opacity:.77;pointer-events:none}
-.blessings-inner{position:relative;z-index:1}
-.blessings-inner>.eyebrow{letter-spacing:.32em}
-.blessings-inner .gold-rule{margin:11px auto 20px}
+.blessings-section{position:relative;overflow:hidden;text-align:center;padding:58px 0 72px;background:linear-gradient(180deg,rgba(255,248,236,.7),rgba(239,222,194,.9));border-top:1px solid var(--gold)}
+.blessings-section:before,.blessings-section:after{content:"❦　✿　❧";position:absolute;top:50%;color:rgba(181,134,66,.38);font-size:34px;letter-spacing:.18em;writing-mode:vertical-rl;transform:translateY(-50%);pointer-events:none}
+.blessings-section:before{left:clamp(12px,5vw,76px)}.blessings-section:after{right:clamp(12px,5vw,76px);transform:translateY(-50%) scaleX(-1)}
+.blessing-inner{position:relative;z-index:1}
+.blessing-inner>.eyebrow{letter-spacing:.32em}
+.blessing-inner .gold-rule{margin:11px auto 20px}
 .blessing-copy{max-width:570px;margin:0 auto;font-size:20px;line-height:1.5;color:var(--ink)}
 .signature{margin-top:18px;font-size:37px;color:var(--burgundy);font-weight:500}
 .footer-date{margin:4px 0 0;color:#97723f;font:500 10px var(--sans);letter-spacing:.3em}
-.blessing-vines{position:absolute;z-index:1;top:25px;color:rgba(181,134,66,.66);font-size:35px;line-height:1.8}
-.blessing-vines.left{left:clamp(15px,6vw,100px)}.blessing-vines.right{right:clamp(15px,6vw,100px);transform:scaleX(-1)}
 .site-footer{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:16px clamp(20px,6vw,80px);background:#f0e3cf;color:var(--burgundy);font:500 9px var(--sans);letter-spacing:.15em}
 .footer-flourish{color:var(--gold);font-size:15px}
 @media(max-width:900px){
+ .hero-photo{height:clamp(370px,56vw,500px)}
  .hero-caption{max-width:700px}
  .event-grid{gap:17px}
- .event-card{grid-template-columns:42% 58%}
+ .event-card{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}
  .event-content{padding:23px 13px}
- .event-kicker{font-size:8px;letter-spacing:.08em}
+ .event-kicker{font-size:8px;letter-spacing:.07em}
  .event-venue{font-size:15px}
  .wedding-section{gap:30px}
 }
@@ -110,57 +111,62 @@ a{color:inherit}
  .site-header{height:60px;padding:6px 16px}
  .brand-ring{width:42px;height:42px}
  .menu-toggle{display:block}
- .nav{display:none;position:absolute;left:0;right:0;top:59px;padding:15px 22px 20px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:8px}
+ .nav{display:none;position:absolute;left:0;right:0;top:59px;padding:15px 22px 20px;background:var(--paper);border-bottom:1px solid rgba(181,134,66,.4);flex-direction:column;align-items:flex-start;gap:8px}
  .nav.open{display:flex}
  .nav a{font-size:10px}
- .hero-frame{max-height:none}
- .hero-art{width:100%;height:auto;mask-image:linear-gradient(to bottom,#000 0%,#000 80%,rgba(0,0,0,.6) 91%,transparent 100%)}
- .hero-caption{width:calc(100% - 28px);margin:-24px auto 0;padding:23px 17px 24px;outline-offset:3px}
- .hero-caption h1{font-size:clamp(40px,11vw,56px)}
+ .hero{padding-bottom:8px}
+ .hero-photo{height:275px}
+ .hero-photo>img{object-position:center 52%}
+ .photo-ornament{font-size:22px}
+ .photo-ornament.top{top:9px}.photo-ornament.bottom{bottom:7px}
+ .hero-caption{width:calc(100% - 28px);margin:-20px auto 0;padding:22px 17px 22px}
+ .hero-caption h1{font-size:clamp(38px,10vw,54px);line-height:.96}
  .invocation{font-size:20px}
  .invitation-copy{font-size:17px}
- .hero-date{gap:8px;font-size:11px;margin-top:15px}
+ .hero-date{gap:8px;font-size:11px;margin-top:14px}
+ .hero-date strong{font-size:12px}
  .section-shell{width:calc(100% - 28px)}
  .family-section{padding:62px 0 58px}
  .family-section h2{font-size:38px;margin-bottom:22px}
- .family-grid{grid-template-columns:1fr;gap:13px}
+ .family-grid{grid-template-columns:minmax(0,1fr);gap:13px}
  .family-card{padding:22px 14px}
  .family-divider{font-size:25px;line-height:1}
  .family-divider i{font-size:16px}
  .events-section{padding:59px 0 63px}
  .section-heading{margin-bottom:27px}
  .section-heading h2{font-size:42px}
- .event-grid{grid-template-columns:1fr;gap:20px}
- .event-card{grid-template-columns:41% 59%;min-height:250px}
- .event-art img{min-height:250px}
- .event-content{padding:18px 12px}
- .event-content h3{font-size:31px}
+ .event-grid{grid-template-columns:minmax(0,1fr);gap:20px}
+ .event-card{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);min-height:260px}
+ .event-art{min-height:260px}
+ .event-art img{min-height:260px}
+ .event-content{padding:18px 13px}
+ .event-content h3{font-size:clamp(28px,7vw,33px)}
  .event-time{font-size:18px}
  .event-venue{font-size:14px}
  .map-link{font-size:9px}
- .wedding-section{grid-template-columns:1fr;padding-block:63px;gap:22px}
- .wedding-art img{min-height:220px;max-height:300px}
+ .wedding-section{grid-template-columns:minmax(0,1fr);padding-block:63px;gap:22px}
+ .wedding-art img{aspect-ratio:1.35/1;object-position:center 55%}
  .wedding-details{padding:0 6px 8px}
  .wedding-details h2{font-size:50px}
  .wedding-date{font-size:18px}
  .wedding-details h3{font-size:28px}
- .blessings-section{padding:50px 0 78px}
- .blessings-section:before{height:76px;background-position:center 70%}
- .blessing-vines{font-size:22px;top:12px;opacity:.6}
- .blessing-copy{font-size:18px;max-width:400px}
+ .blessings-section{padding:48px 0 62px}
+ .blessings-section:before,.blessings-section:after{font-size:18px;top:13px;transform:none;writing-mode:horizontal-tb;letter-spacing:0}
+ .blessings-section:before{left:12px}.blessings-section:after{right:12px;transform:scaleX(-1)}
+ .blessing-copy{font-size:18px;max-width:390px;padding-inline:16px}
  .signature{font-size:34px}
  .site-footer{justify-content:center;flex-wrap:wrap;text-align:center;gap:10px 18px}
 }
 @media(max-width:390px){
- .event-card{grid-template-columns:1fr}
- .event-art{height:205px}
- .event-art img{min-height:205px;max-height:205px}
- .event-content{padding:23px 18px}
+ .event-card{grid-template-columns:minmax(0,1fr)}
+ .event-art{height:230px;min-height:230px}
+ .event-art img{height:230px;min-height:230px;object-fit:cover;object-position:center 42%}
+ .event-content{padding:24px 18px}
  .hero-caption h1{font-size:39px}
 }
 @media(prefers-reduced-motion:no-preference){
  .hero-caption>*{animation:reveal .65s both}
- .hero-caption>*:nth-child(2){animation-delay:.07s}
- .hero-caption>*:nth-child(3){animation-delay:.13s}
- @keyframes reveal{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+ .hero-caption>*:nth-child(2){animation-delay:.06s}
+ .hero-caption>*:nth-child(4){animation-delay:.12s}
+ @keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 }

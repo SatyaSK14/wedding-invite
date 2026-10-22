@@ -12,26 +12,37 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="paper-grain" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="#welcome" aria-label="Satyajeet and Chetana home"><span class="brand-ring"><span class="brand-s">S</span><span class="brand-c">C</span><span class="brand-leaf">❦</span></span></a>
+    <a class="brand" href="#welcome" aria-label="Satyajeet and Chetana home">
+      <span class="brand-ring" aria-hidden="true"><span>S</span><i>C</i></span>
+    </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
     <nav class="nav" id="site-nav" aria-label="Main navigation">
-      <a href="#welcome">Welcome</a><a href="#celebrations">Pre-wedding</a><a href="#wedding">The Wedding</a><a href="#blessings">Blessings</a>
+      <a href="#welcome">Welcome</a>
+      <a href="#celebrations">Pre-wedding</a>
+      <a href="#wedding">The Wedding</a>
+      <a href="#blessings">Blessings</a>
     </nav>
   </header>
 
   <main>
     <section id="welcome" class="hero">
-      <div class="hero-frame">
-        <img class="hero-art" src="assets/hero.webp" alt="An ornate ivory palace arch adorned with floral garlands, temple architecture, and a wedding couple illustration">
+      <div class="hero-photo">
+        <img
+          src="https://images.pexels.com/photos/33417234/pexels-photo-33417234.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000"
+          alt="A grand outdoor Indian wedding mandap in a historic golden palace courtyard, dressed in burgundy flowers"
+          width="2000" height="1333" fetchpriority="high">
+        <div class="hero-wash" aria-hidden="true"></div>
+        <div class="photo-ornament top" aria-hidden="true">❦　✿　❦</div>
+        <div class="photo-ornament bottom" aria-hidden="true">✧　❀　✧</div>
       </div>
+
       <div class="hero-caption">
-        <p class="eyebrow">A new chapter begins</p>
-        <h1>Satyajeet <span>&amp;</span> Chetana</h1>
-        <div class="gold-rule" aria-hidden="true"><span>✿</span></div>
+        <p class="eyebrow">An auspicious beginning</p>
         <p class="invocation" lang="sa">ॐ श्री गणेशाय नमः</p>
         <p class="roman-invocation">Om Shri Ganeshaya Namah</p>
+        <h1>Satyajeet <span>&amp;</span> Chetana</h1>
+        <div class="gold-rule" aria-hidden="true"><span>✿</span></div>
         <p class="invitation-copy">Together with our families, we warmly invite you to celebrate our wedding and bless the beginning of our journey as one.</p>
         <div class="hero-date"><span>Sunday</span><i></i><strong>13 December 2026</strong><i></i><span>Bhubaneswar</span></div>
       </div>
@@ -66,9 +77,15 @@
           <h2>Before the big day</h2>
           <div class="gold-rule" aria-hidden="true"><span>✿</span></div>
         </div>
+
         <div class="event-grid">
-          <article class="event-card haldi">
-            <div class="event-art"><img src="assets/haldi.webp" alt="Golden haldi celebration setting decorated with flowers and brass lamps"></div>
+          <article class="event-card">
+            <div class="event-art">
+              <img
+                src="https://images.pexels.com/photos/33508474/pexels-photo-33508474.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000"
+                alt="A traditional palace arch dressed with cascading orange and yellow marigold garlands"
+                width="1000" height="1500" loading="lazy">
+            </div>
             <div class="event-content">
               <p class="event-kicker">Saturday · 12 December 2026</p>
               <h3>Haldi</h3>
@@ -78,8 +95,14 @@
               <a class="map-link" href="https://maps.app.goo.gl/wV6QRAKrZUPf64D3A?g_st=ac" target="_blank" rel="noopener noreferrer">View on Google Maps <span>↗</span></a>
             </div>
           </article>
-          <article class="event-card sangeet">
-            <div class="event-art"><img src="assets/sangeet.webp" alt="Warm floral mehendi and sangeet setting with traditional decorations"></div>
+
+          <article class="event-card">
+            <div class="event-art">
+              <img
+                src="https://images.pexels.com/photos/33485973/pexels-photo-33485973.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000"
+                alt="A luxury outdoor wedding stage with white florals and soft blush accents"
+                width="1000" height="1500" loading="lazy">
+            </div>
             <div class="event-content">
               <p class="event-kicker">Saturday · 12 December 2026</p>
               <h3>Mehendi &amp; Sangeet</h3>
@@ -95,7 +118,10 @@
 
     <section id="wedding" class="wedding-section section-shell">
       <div class="wedding-art">
-        <img src="assets/mandap.webp" alt="A floral wedding mandap set against a temple landscape">
+        <img
+          src="https://images.pexels.com/photos/33417236/pexels-photo-33417236.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400"
+          alt="A wedding mandap framed by palace architecture and lush burgundy floral decorations"
+          width="1400" height="2100" loading="lazy">
         <div class="wedding-art-caption"><span>❦</span><span>Shubh Vivah</span><span>❦</span></div>
       </div>
       <div class="wedding-details">
@@ -110,9 +136,8 @@
     </section>
 
     <section id="blessings" class="blessings-section">
-      <div class="blessing-vines left" aria-hidden="true">❦<br>✿<br>❧</div>
-      <div class="blessing-vines right" aria-hidden="true">❦<br>✿<br>❧</div>
-      <div class="section-shell blessings-inner">
+      <div class="blessing-inner section-shell">
+        <div class="section-ornament" aria-hidden="true">❧ <span>✿</span> ❧</div>
         <p class="eyebrow">Blessings</p>
         <div class="gold-rule" aria-hidden="true"><span>✥</span></div>
         <p class="blessing-copy">Your presence and blessings will make our celebration truly special.</p>
@@ -121,7 +146,10 @@
       </div>
     </section>
   </main>
-  <footer class="site-footer"><span>Made with love</span><span class="footer-flourish" aria-hidden="true">✦ ❦ ✦</span><span>Satyajeet &amp; Chetana</span></footer>
+
+  <footer class="site-footer">
+    <span>Made with love</span><span class="footer-flourish" aria-hidden="true">✦ ❦ ✦</span><span>Satyajeet &amp; Chetana</span>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
